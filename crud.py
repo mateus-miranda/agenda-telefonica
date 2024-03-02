@@ -6,7 +6,7 @@ class AppBD:
 
     def abrirConexao(self):
         try:
-            self.conn = psycopg2.connect(database = "agenda", user = "postgres", password = "#Mateus4151", host = "127.0.0.1", port = "5432")
+            self.conn = psycopg2.connect(database = "agenda", user = "postgres", password = "Sua_Senha", host = "127.0.0.1", port = "5432")
             print('Banco de dados conectado com sucesso!')
         except (Exception, psycopg2.Error) as error:
             if (self.conn):
